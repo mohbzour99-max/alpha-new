@@ -9,18 +9,15 @@ const HeroSection = () => {
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Video Background with Overlay */}
       <div className="absolute inset-0">
-        <video
+        <iframe
           className="absolute inset-0 w-full h-full object-cover"
-          autoPlay
-          muted
-          loop
-          playsInline
-        >
-          <source src="https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_5mb.mp4" type="video/mp4" />
-          <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4" />
-          {/* Fallback for browsers that don't support video */}
-          Your browser does not support the video tag.
-        </video>
+          src="https://www.youtube.com/embed/9RPbvQ_7GSc?autoplay=1&mute=1&loop=1&playlist=9RPbvQ_7GSc&controls=0&showinfo=0&rel=0&iv_load_policy=3&modestbranding=1&disablekb=1&fs=0&cc_load_policy=0&playsinline=1&enablejsapi=0"
+          title="Alpha AI Background Video"
+          frameBorder="0"
+          allow="autoplay; encrypted-media"
+          allowFullScreen={false}
+          style={{ pointerEvents: 'none' }}
+        />
         <div className="absolute inset-0 alpha-gradient-bg opacity-80"></div>
       </div>
 
