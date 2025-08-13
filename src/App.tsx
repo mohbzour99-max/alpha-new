@@ -20,7 +20,7 @@ import SentimentAnalysis from "./pages/services/SentimentAnalysis";
 import ClusteringModels from "./pages/services/ClusteringModels";
 import ComputerVision from "./pages/services/ComputerVision";
 import TemporalAnalysis from "./pages/services/TemporalAnalysis";
-import RetailEcommerce from "./pages/sectors/RetailEcommerce.tsx";
+import RetailEcommerce from "./pages/sectors/RetailEcommerce";
 import JobApplication from "./pages/JobApplication";
 
 const queryClient = new QueryClient();

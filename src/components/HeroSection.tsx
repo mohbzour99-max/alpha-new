@@ -1,34 +1,18 @@
 import { useTranslation } from 'react-i18next';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Play } from 'lucide-react';
+import heroBackground from '@/assets/hero-bg.jpg';
 
 const HeroSection = () => {
   const { t } = useTranslation();
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background with Overlay */}
-      <div className="absolute inset-0">
-        {/* Animated gradient background as fallback */}
-        <div className="absolute inset-0 bg-gradient-to-br from-alpha-primary via-alpha-primary/90 to-alpha-secondary animate-gradient-x"></div>
-        
-        {/* Video Background - YouTube embed with better parameters */}
-        <div className="absolute inset-0 w-full h-full">
-          <iframe
-            className="absolute inset-0 w-full h-full scale-150 -translate-y-16"
-            src="https://www.youtube.com/embed/9RPbvQ_7GSc?autoplay=1&mute=1&loop=1&playlist=9RPbvQ_7GSc&controls=0&showinfo=0&rel=0&iv_load_policy=3&modestbranding=1&disablekb=1&fs=0&cc_load_policy=0&playsinline=1&enablejsapi=1&origin=https://lovable.dev"
-            title="Alpha AI Background Video"
-            frameBorder="0"
-            allow="autoplay; encrypted-media; fullscreen"
-            allowFullScreen={false}
-            style={{ 
-              pointerEvents: 'none',
-              border: 'none',
-              outline: 'none'
-            }}
-          />
-        </div>
-        
+      {/* Background Image with Overlay */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: `url(${heroBackground})` }}
+      >
         <div className="absolute inset-0 alpha-gradient-bg opacity-80"></div>
       </div>
 
