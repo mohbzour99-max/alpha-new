@@ -1,7 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Play } from 'lucide-react';
-import heroBackground from '@/assets/hero-bg.jpg';
 
 const HeroSection = () => {
   const { t } = useTranslation();
@@ -11,7 +10,7 @@ const HeroSection = () => {
       {/* Background Image with Overlay */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${heroBackground})` }}
+        style={{ backgroundImage: `url(https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=1920)` }}
       >
         <div className="absolute inset-0 alpha-gradient-bg opacity-80"></div>
       </div>
